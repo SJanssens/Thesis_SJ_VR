@@ -1,0 +1,15 @@
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {dutch}
+\select@language {english}
+\select@language {dutch}
+\contentsline {chapter}{Voorwoord}{ii}{chapter*.1}
+\contentsline {chapter}{Abstract}{iii}{chapter*.2}
+\contentsline {chapter}{Inhoudsopgave}{iv}{section*.3}
+\contentsline {chapter}{Lijst van symbolen}{v}{chapter*.4}
+\contentsline {chapter}{Lijst van figuren}{vi}{section*.5}
+\contentsline {chapter}{Lijst van tabellen}{vii}{section*.6}
+\contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.7}
+\contentsline {chapter}{\chapternumberline {2}Masterframe}{2}{chapter.8}
+\contentsline {chapter}{Bibliografie}{5}{section*.13}

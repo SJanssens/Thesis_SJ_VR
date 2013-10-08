@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<s>
+   <entry>
+      <firstName>
+         Joe
+      </firstName>
+      <lastName>
+         Bloggs
+      </lastName>
+      <address>
+         <institute>
+            
+         </institute>
+         <street>
+            1, Avenue des Champs Elysees
+         </street>
+         <zipCode>
+            75000
+         </zipCode>
+         <city>
+            Paris
+         </city>
+         <country>
+            France
+         </country>
+      </address>
+      <phone>
+         (+33) 1 23 45 67 89
+      </phone>
+      <email>
+         john.doh@email.com
+      </email>
+      <misc>
+         a
+      </misc>
+      <misc>
+         b
+      </misc>
+   </entry>
+</s>

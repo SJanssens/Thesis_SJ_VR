@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<framedesc>
+   <info>
+      <date>
+         2011_08_02
+      </date>
+      <time>
+         14_54_09
+      </time>
+      <move>
+         23
+      </move>
+   </info>
+   <thisframe>
+      movecard
+   </thisframe>
+   <data>
+      <from_suit>
+         s
+      </from_suit>
+      <from_value>
+         2
+      </from_value>
+      <from_foundation>
+         
+      </from_foundation>
+      <from_fieldcol>
+         
+      </from_fieldcol>
+      <from_hand>
+         
+      </from_hand>
+      <target_suit>
+         
+      </target_suit>
+      <target_value>
+         1
+      </target_value>
+      <target_foundation>
+         1
+      </target_foundation>
+      <target_foundation>
+         2
+      </target_foundation>
+      <target_foundation>
+         3
+      </target_foundation>
+      <target_foundation>
+         4
+      </target_foundation>
+      <target_foundationempty>
+         
+      </target_foundationempty>
+      <target_fieldcol>
+         
+      </target_fieldcol>
+      <target_fieldcolempty>
+         
+      </target_fieldcolempty>
+   </data>
+</framedesc>

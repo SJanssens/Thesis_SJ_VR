@@ -1,0 +1,3687 @@
+
++++++++++++++++++++++
++                   +
++   ALL INSTANCES   +
++                   +
++++++++++++++++++++++
+
+
+------------------------------------------------------
+--- CONFUSION MATRICES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  1         1         
+movecard  |  1         3         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  1   1   
+{}  |  1   3   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  1   1   0   0   1   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  1   0   0   0   0   
+{}  |  0   0   0   1   1   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  1   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  2   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   1   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   6   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   2   0   0   0   0   0   0   0   0   0   0   0   4   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   6   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  2   1   0   0   0   
+2   |  0   0   0   0   1   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  1   0   0   0   1   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   6   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   6   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   6   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  1       1       
+empty   |  1       3       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  2       4       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+
+---------------------------------------------------------------
+--- CONFUSION MATRICES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  1         1         
+movecard  |  1         3         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  1   1   
+{}  |  1   3   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  2   1   0   0   1   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   1   1   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  1   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  2   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   1   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   6   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   2   0   0   0   0   0   0   0   0   0   0   0   4   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   6   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  2   1   0   0   0   
+2   |  0   0   0   0   1   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  1   0   0   0   1   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   6   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   6   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   6   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  1       1       
+empty   |  1       3       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  2       4       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  1       1       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       6       
+
+
+
+------------------------------------------
+--- SCORES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 6
+num_correct        : 4
+accuracy           : 0.6667
+errorrate          : 0.3333
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 5
+sum_positives_reference : 14
+sum_positives_prediction: 16
+micro_precision         : 0.3125
+micro_recall            : 0.3571
+micro_Fscore            : 0.3333
+macro_precision         : 0.2222
+macro_recall            : 0.3125
+macro_Fscore            : 0.2952
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 60
+num_correct          : 45
+num_correct_empty    : 40
+num_correct_filled   : 5
+num_empty_reference  : 46
+num_empty_prediction : 44
+num_filled_reference : 14
+num_filled_prediction: 16
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.8696
+precision            : 0.3125
+recall               : 0.3571
+Fscore               : 0.3333
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 60
+num_correct          : 50
+num_correct_empty    : 40
+num_correct_filled   : 10
+num_empty_reference  : 46
+num_empty_prediction : 44
+num_filled_reference : 14
+num_filled_prediction: 16
+accuracy             : 0.8333
+errorrate            : 0.1667
+truenegrate          : 0.8696
+precision            : 0.6250
+recall               : 0.7143
+Fscore               : 0.6667
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 6
+num_correct          : 4
+num_correct_empty    : 3
+num_correct_filled   : 1
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 2
+num_filled_prediction: 2
+accuracy             : 0.6667
+errorrate            : 0.3333
+truenegrate          : 0.7500
+precision            : 0.5000
+recall               : 0.5000
+Fscore               : 0.5000
+
+-- movecard_from_suit --
+num_classifications  : 6
+num_correct          : 2
+num_correct_empty    : 1
+num_correct_filled   : 1
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.3333
+errorrate            : 0.6667
+truenegrate          : 0.5000
+precision            : 0.2500
+recall               : 0.2500
+Fscore               : 0.2500
+
+-- movecard_from_value --
+num_classifications  : 6
+num_correct          : 2
+num_correct_empty    : 1
+num_correct_filled   : 1
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.3333
+errorrate            : 0.6667
+truenegrate          : 0.5000
+precision            : 0.2500
+recall               : 0.2500
+Fscore               : 0.2500
+
+-- movecard_target_suit --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 6
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 2
+accuracy             : 0.6667
+errorrate            : 0.3333
+truenegrate          : 0.6667
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 6
+num_correct          : 3
+num_correct_empty    : 1
+num_correct_filled   : 2
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.5000
+recall               : 0.5000
+Fscore               : 0.5000
+
+-- movecard_from_fieldcol --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 2
+micro_precision         : 0.5000
+micro_recall            : 0.5000
+micro_Fscore            : 0.5000
+macro_precision         : 0.5000
+macro_recall            : 0.5000
+macro_Fscore            : 0.5000
+
+-- movecard_from_suit --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.2500
+micro_recall            : 0.2500
+micro_Fscore            : 0.2500
+macro_precision         : 0.1667
+macro_recall            : 0.1667
+macro_Fscore            : 0.2000
+
+-- movecard_from_value --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.2500
+micro_recall            : 0.2500
+micro_Fscore            : 0.2500
+macro_precision         : 0.1667
+macro_recall            : 0.3333
+macro_Fscore            : 0.2500
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 2
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.5000
+micro_recall            : 0.5000
+micro_Fscore            : 0.5000
+macro_precision         : 0.3333
+macro_recall            : 0.3333
+macro_Fscore            : 0.3333
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+
+---------------------------------------------------
+--- SCORES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 6
+num_correct        : 4
+accuracy           : 0.6667
+errorrate          : 0.3333
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 6
+sum_positives_reference : 14
+sum_positives_prediction: 16
+micro_precision         : 0.3750
+micro_recall            : 0.4286
+micro_Fscore            : 0.4000
+macro_precision         : 0.2778
+macro_recall            : 0.3810
+macro_Fscore            : 0.3889
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 60
+num_correct          : 46
+num_correct_empty    : 40
+num_correct_filled   : 6
+num_empty_reference  : 46
+num_empty_prediction : 44
+num_filled_reference : 14
+num_filled_prediction: 16
+accuracy             : 0.7667
+errorrate            : 0.2333
+truenegrate          : 0.8696
+precision            : 0.3750
+recall               : 0.4286
+Fscore               : 0.4000
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 60
+num_correct          : 50
+num_correct_empty    : 40
+num_correct_filled   : 10
+num_empty_reference  : 46
+num_empty_prediction : 44
+num_filled_reference : 14
+num_filled_prediction: 16
+accuracy             : 0.8333
+errorrate            : 0.1667
+truenegrate          : 0.8696
+precision            : 0.6250
+recall               : 0.7143
+Fscore               : 0.6667
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 6
+num_correct          : 4
+num_correct_empty    : 3
+num_correct_filled   : 1
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 2
+num_filled_prediction: 2
+accuracy             : 0.6667
+errorrate            : 0.3333
+truenegrate          : 0.7500
+precision            : 0.5000
+recall               : 0.5000
+Fscore               : 0.5000
+
+-- movecard_from_suit --
+num_classifications  : 6
+num_correct          : 3
+num_correct_empty    : 1
+num_correct_filled   : 2
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.5000
+recall               : 0.5000
+Fscore               : 0.5000
+
+-- movecard_from_value --
+num_classifications  : 6
+num_correct          : 2
+num_correct_empty    : 1
+num_correct_filled   : 1
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.3333
+errorrate            : 0.6667
+truenegrate          : 0.5000
+precision            : 0.2500
+recall               : 0.2500
+Fscore               : 0.2500
+
+-- movecard_target_suit --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 6
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 2
+accuracy             : 0.6667
+errorrate            : 0.3333
+truenegrate          : 0.6667
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 6
+num_correct          : 3
+num_correct_empty    : 1
+num_correct_filled   : 2
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 4
+num_filled_prediction: 4
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.5000
+recall               : 0.5000
+Fscore               : 0.5000
+
+-- movecard_from_fieldcol --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 6
+num_correct          : 6
+num_correct_empty    : 6
+num_correct_filled   : 0
+num_empty_reference  : 6
+num_empty_prediction : 6
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 2
+micro_precision         : 0.5000
+micro_recall            : 0.5000
+micro_Fscore            : 0.5000
+macro_precision         : 0.5000
+macro_recall            : 0.5000
+macro_Fscore            : 0.5000
+
+-- movecard_from_suit --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.5000
+micro_recall            : 0.5000
+micro_Fscore            : 0.5000
+macro_precision         : 0.3333
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+-- movecard_from_value --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.2500
+micro_recall            : 0.2500
+micro_Fscore            : 0.2500
+macro_precision         : 0.1667
+macro_recall            : 0.3333
+macro_Fscore            : 0.2500
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 2
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 4
+micro_precision         : 0.5000
+micro_recall            : 0.5000
+micro_Fscore            : 0.5000
+macro_precision         : 0.3333
+macro_recall            : 0.3333
+macro_Fscore            : 0.3333
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+
+++++++++++++++++++++
++                  +
++   REF FRAME: 1   +
++                  +
+++++++++++++++++++++
+
+
+------------------------------------------------------
+--- CONFUSION MATRICES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  1         1         
+movecard  |  0         0         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  1   1   
+{}  |  0   0   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   1   1   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   2   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   2   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  1   0   0   0   1   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   2   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   2   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   2   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  1       1       
+empty   |  0       0       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+
+---------------------------------------------------------------
+--- CONFUSION MATRICES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  1         1         
+movecard  |  0         0         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  1   1   
+{}  |  0   0   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   1   1   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   2   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   1   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   2   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  1   0   0   0   1   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   2   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   2   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   2   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  1       1       
+empty   |  0       0       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       1       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       2       
+
+
+
+------------------------------------------
+--- SCORES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 2
+num_correct        : 1
+accuracy           : 0.5000
+errorrate          : 0.5000
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 5
+micro_precision         : 0.2000
+micro_recall            : 0.5000
+micro_Fscore            : 0.2857
+macro_precision         : 0.2000
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 20
+num_correct          : 15
+num_correct_empty    : 14
+num_correct_filled   : 1
+num_empty_reference  : 18
+num_empty_prediction : 15
+num_filled_reference : 2
+num_filled_prediction: 5
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7778
+precision            : 0.2000
+recall               : 0.5000
+Fscore               : 0.2857
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 20
+num_correct          : 15
+num_correct_empty    : 14
+num_correct_filled   : 1
+num_empty_reference  : 18
+num_empty_prediction : 15
+num_filled_reference : 2
+num_filled_prediction: 5
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7778
+precision            : 0.2000
+recall               : 0.5000
+Fscore               : 0.2857
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 0
+num_correct_filled   : 1
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 2
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : NaN
+precision            : 1.0000
+recall               : 0.5000
+Fscore               : 0.6667
+
+-- movecard_from_suit --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_value --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_suit --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_fieldcol --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 1
+micro_precision         : 1.0000
+micro_recall            : 0.5000
+micro_Fscore            : 0.6667
+macro_precision         : 1.0000
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+-- movecard_from_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+
+---------------------------------------------------
+--- SCORES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 2
+num_correct        : 1
+accuracy           : 0.5000
+errorrate          : 0.5000
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 5
+micro_precision         : 0.2000
+micro_recall            : 0.5000
+micro_Fscore            : 0.2857
+macro_precision         : 0.2000
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 20
+num_correct          : 15
+num_correct_empty    : 14
+num_correct_filled   : 1
+num_empty_reference  : 18
+num_empty_prediction : 15
+num_filled_reference : 2
+num_filled_prediction: 5
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7778
+precision            : 0.2000
+recall               : 0.5000
+Fscore               : 0.2857
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 20
+num_correct          : 15
+num_correct_empty    : 14
+num_correct_filled   : 1
+num_empty_reference  : 18
+num_empty_prediction : 15
+num_filled_reference : 2
+num_filled_prediction: 5
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7778
+precision            : 0.2000
+recall               : 0.5000
+Fscore               : 0.2857
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 0
+num_correct_filled   : 1
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 2
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : NaN
+precision            : 1.0000
+recall               : 0.5000
+Fscore               : 0.6667
+
+-- movecard_from_suit --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_value --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_suit --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 2
+num_correct          : 1
+num_correct_empty    : 1
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 1
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : 0.5000
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_fieldcol --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 2
+num_correct          : 2
+num_correct_empty    : 2
+num_correct_filled   : 0
+num_empty_reference  : 2
+num_empty_prediction : 2
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 1
+sum_positives_reference : 2
+sum_positives_prediction: 1
+micro_precision         : 1.0000
+micro_recall            : 0.5000
+micro_Fscore            : 0.6667
+macro_precision         : 1.0000
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+-- movecard_from_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+
+++++++++++++++++++++
++                  +
++   REF FRAME: 2   +
++                  +
+++++++++++++++++++++
+
+
+------------------------------------------------------
+--- CONFUSION MATRICES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  0         0         
+movecard  |  1         3         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  1   3   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  1   1   0   0   1   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  1   0   0   0   0   
+{}  |  0   0   0   0   0   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  1   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  2   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   1   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   4   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   3   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   4   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  2   1   0   0   0   
+2   |  0   0   0   0   1   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   0   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   4   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   4   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   4   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       3       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       3       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+
+---------------------------------------------------------------
+--- CONFUSION MATRICES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------------------
+
+
+CONFUSION MATRIX ON FRAME LEVEL:
+
+| ref.  --> pred.
+v
+          |  dealcard  movecard  
+----------+----------------------
+dealcard  |  0         0         
+movecard  |  1         3         
+
+
+CONFUSION MATRICES ON SLOT-VALUE LEVEL:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  1   3   
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  2   1   0   0   1   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   0   
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  1   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  2   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   1   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+    |  s   d   h   c   {}  
+----+----------------------
+s   |  0   0   0   0   0   
+d   |  0   0   0   0   0   
+h   |  0   0   0   0   0   
+c   |  0   0   0   0   0   
+{}  |  0   0   0   0   4   
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   8   9   10  11  12  13  {}  
+----+----------------------------------------------------------
+1   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+8   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+9   |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+10  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+11  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+12  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+13  |  0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+{}  |  0   1   0   0   0   0   0   0   0   0   0   0   0   3   
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  0   0   0   0   0   
+2   |  0   0   0   0   0   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   4   
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   {}  
+----+----------------------
+1   |  2   1   0   0   0   
+2   |  0   0   0   0   1   
+3   |  0   0   0   0   0   
+4   |  0   0   0   0   0   
+{}  |  0   0   0   0   0   
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   4   
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+    |  1   2   3   4   5   6   7   {}  
+----+----------------------------------
+1   |  0   0   0   0   0   0   0   0   
+2   |  0   0   0   0   0   0   0   0   
+3   |  0   0   0   0   0   0   0   0   
+4   |  0   0   0   0   0   0   0   0   
+5   |  0   0   0   0   0   0   0   0   
+6   |  0   0   0   0   0   0   0   0   
+7   |  0   0   0   0   0   0   0   0   
+{}  |  0   0   0   0   0   0   0   4   
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+    |  1   {}  
+----+----------
+1   |  0   0   
+{}  |  0   4   
+
+
+CONFUSION MATRICES FOR BINARY SLOT FILLING:
+
+
+FRAME: dealcard
+
+Slot: dealcard
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       3       
+
+
+FRAME: movecard
+
+Slot: from_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: from_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: target_suit
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_value
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  1       3       
+
+
+Slot: from_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_foundation
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  3       1       
+empty   |  0       0       
+
+
+Slot: from_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: target_fieldcol
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+Slot: from_hand
+
+| ref.  --> pred.
+v
+        |  filled  empty   
+--------+------------------
+filled  |  0       0       
+empty   |  0       4       
+
+
+
+------------------------------------------
+--- SCORES BASED ON UNAMBIGUOUS FRAMES ---
+------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 4
+num_correct        : 3
+accuracy           : 0.7500
+errorrate          : 0.2500
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 4
+sum_positives_reference : 12
+sum_positives_prediction: 11
+micro_precision         : 0.3636
+micro_recall            : 0.3333
+micro_Fscore            : 0.3478
+macro_precision         : 0.2619
+macro_recall            : 0.2857
+macro_Fscore            : 0.4250
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 40
+num_correct          : 30
+num_correct_empty    : 26
+num_correct_filled   : 4
+num_empty_reference  : 28
+num_empty_prediction : 29
+num_filled_reference : 12
+num_filled_prediction: 11
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.9286
+precision            : 0.3636
+recall               : 0.3333
+Fscore               : 0.3478
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 40
+num_correct          : 35
+num_correct_empty    : 26
+num_correct_filled   : 9
+num_empty_reference  : 28
+num_empty_prediction : 29
+num_filled_reference : 12
+num_filled_prediction: 11
+accuracy             : 0.8750
+errorrate            : 0.1250
+truenegrate          : 0.9286
+precision            : 0.8182
+recall               : 0.7500
+Fscore               : 0.7826
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 4
+num_correct          : 3
+num_correct_empty    : 3
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 3
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7500
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_suit --
+num_classifications  : 4
+num_correct          : 1
+num_correct_empty    : 0
+num_correct_filled   : 1
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.2500
+errorrate            : 0.7500
+truenegrate          : NaN
+precision            : 0.3333
+recall               : 0.2500
+Fscore               : 0.2857
+
+-- movecard_from_value --
+num_classifications  : 4
+num_correct          : 1
+num_correct_empty    : 0
+num_correct_filled   : 1
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.2500
+errorrate            : 0.7500
+truenegrate          : NaN
+precision            : 0.3333
+recall               : 0.2500
+Fscore               : 0.2857
+
+-- movecard_target_suit --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 4
+num_correct          : 3
+num_correct_empty    : 3
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 3
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7500
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 4
+num_correct          : 2
+num_correct_empty    : 0
+num_correct_filled   : 2
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : NaN
+precision            : 0.6667
+recall               : 0.5000
+Fscore               : 0.5714
+
+-- movecard_from_fieldcol --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_suit --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.3333
+micro_recall            : 0.2500
+micro_Fscore            : 0.2857
+macro_precision         : 0.2500
+macro_recall            : 0.1667
+macro_Fscore            : 0.4000
+
+-- movecard_from_value --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.3333
+micro_recall            : 0.2500
+micro_Fscore            : 0.2857
+macro_precision         : 0.3333
+macro_recall            : 0.3333
+macro_Fscore            : 0.5000
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.6667
+micro_recall            : 0.5000
+micro_Fscore            : 0.5714
+macro_precision         : 0.5000
+macro_recall            : 0.3333
+macro_Fscore            : 0.4000
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+
+---------------------------------------------------
+--- SCORES AFTER INCORPORATING AMBIGUOUS FRAMES ---
+---------------------------------------------------
+
+
+FRAME LEVEL SCORES, GLOBAL:
+
+num_classifications: 4
+num_correct        : 3
+accuracy           : 0.7500
+errorrate          : 0.2500
+
+SLOTVALUE LEVEL SCORES, GLOBAL:
+
+sum_true_positives      : 5
+sum_positives_reference : 12
+sum_positives_prediction: 11
+micro_precision         : 0.4545
+micro_recall            : 0.4167
+micro_Fscore            : 0.4348
+macro_precision         : 0.3333
+macro_recall            : 0.3611
+macro_Fscore            : 0.4917
+
+SLOT LEVEL SCORES, GLOBAL:
+
+num_classifications  : 40
+num_correct          : 31
+num_correct_empty    : 26
+num_correct_filled   : 5
+num_empty_reference  : 28
+num_empty_prediction : 29
+num_filled_reference : 12
+num_filled_prediction: 11
+accuracy             : 0.7750
+errorrate            : 0.2250
+truenegrate          : 0.9286
+precision            : 0.4545
+recall               : 0.4167
+Fscore               : 0.4348
+
+BINARY SLOT FILLING SCORES, GLOBAL:
+
+num_classifications  : 40
+num_correct          : 35
+num_correct_empty    : 26
+num_correct_filled   : 9
+num_empty_reference  : 28
+num_empty_prediction : 29
+num_filled_reference : 12
+num_filled_prediction: 11
+accuracy             : 0.8750
+errorrate            : 0.1250
+truenegrate          : 0.9286
+precision            : 0.8182
+recall               : 0.7500
+Fscore               : 0.7826
+
+SLOT LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+num_classifications  : 4
+num_correct          : 3
+num_correct_empty    : 3
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 3
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7500
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_suit --
+num_classifications  : 4
+num_correct          : 2
+num_correct_empty    : 0
+num_correct_filled   : 2
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : NaN
+precision            : 0.6667
+recall               : 0.5000
+Fscore               : 0.5714
+
+-- movecard_from_value --
+num_classifications  : 4
+num_correct          : 1
+num_correct_empty    : 0
+num_correct_filled   : 1
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.2500
+errorrate            : 0.7500
+truenegrate          : NaN
+precision            : 0.3333
+recall               : 0.2500
+Fscore               : 0.2857
+
+-- movecard_target_suit --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_value --
+num_classifications  : 4
+num_correct          : 3
+num_correct_empty    : 3
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 3
+num_filled_reference : 0
+num_filled_prediction: 1
+accuracy             : 0.7500
+errorrate            : 0.2500
+truenegrate          : 0.7500
+precision            : 0.0000
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_foundation --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_foundation --
+num_classifications  : 4
+num_correct          : 2
+num_correct_empty    : 0
+num_correct_filled   : 2
+num_empty_reference  : 0
+num_empty_prediction : 1
+num_filled_reference : 4
+num_filled_prediction: 3
+accuracy             : 0.5000
+errorrate            : 0.5000
+truenegrate          : NaN
+precision            : 0.6667
+recall               : 0.5000
+Fscore               : 0.5714
+
+-- movecard_from_fieldcol --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_target_fieldcol --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+-- movecard_from_hand --
+num_classifications  : 4
+num_correct          : 4
+num_correct_empty    : 4
+num_correct_filled   : 0
+num_empty_reference  : 4
+num_empty_prediction : 4
+num_filled_reference : 0
+num_filled_prediction: 0
+accuracy             : 1.0000
+errorrate            : 0.0000
+truenegrate          : 1.0000
+precision            : NaN
+recall               : NaN
+Fscore               : NaN
+
+SLOTVALUE LEVEL SCORES, PER SLOT:
+
+-- dealcard_dealcard --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_suit --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.6667
+micro_recall            : 0.5000
+micro_Fscore            : 0.5714
+macro_precision         : 0.5000
+macro_recall            : 0.5000
+macro_Fscore            : 0.6667
+
+-- movecard_from_value --
+sum_true_positives      : 1
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.3333
+micro_recall            : 0.2500
+micro_Fscore            : 0.2857
+macro_precision         : 0.3333
+macro_recall            : 0.3333
+macro_Fscore            : 0.5000
+
+-- movecard_target_suit --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_value --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 1
+micro_precision         : 0.0000
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : 0.0000
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_foundation --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_foundation --
+sum_true_positives      : 2
+sum_positives_reference : 4
+sum_positives_prediction: 3
+micro_precision         : 0.6667
+micro_recall            : 0.5000
+micro_Fscore            : 0.5714
+macro_precision         : 0.5000
+macro_recall            : 0.3333
+macro_Fscore            : 0.4000
+
+-- movecard_from_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_target_fieldcol --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
+-- movecard_from_hand --
+sum_true_positives      : 0
+sum_positives_reference : 0
+sum_positives_prediction: 0
+micro_precision         : NaN
+micro_recall            : NaN
+micro_Fscore            : NaN
+macro_precision         : NaN
+macro_recall            : NaN
+macro_Fscore            : NaN
+
