@@ -12,4 +12,6 @@
 \contentsline {chapter}{Lijst van tabellen}{vii}{section*.6}
 \contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.7}
 \contentsline {chapter}{\chapternumberline {2}Masterframe}{2}{chapter.8}
-\contentsline {chapter}{Bibliografie}{5}{section*.13}
+\contentsline {section}{\numberline {2.1}Frames}{2}{section.10}
+\contentsline {section}{\numberline {2.2}Slots en slotvalues}{3}{section.12}
+\contentsline {chapter}{Bibliografie}{6}{section*.15}

@@ -6,4 +6,6 @@
 \BOOKMARK [0][-]{section*.6}{Lijst van tabellen}{}% 6
 \BOOKMARK [0][-]{chapter.7}{Inleiding}{}% 7
 \BOOKMARK [0][-]{chapter.8}{Masterframe}{}% 8
-\BOOKMARK [0][-]{section*.13}{Bibliografie}{}% 9
+\BOOKMARK [1][-]{section.10}{Frames}{chapter.8}% 9
+\BOOKMARK [1][-]{section.12}{Slots en slotvalues}{chapter.8}% 10
+\BOOKMARK [0][-]{section*.15}{Bibliografie}{}% 11
